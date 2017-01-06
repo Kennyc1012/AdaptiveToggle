@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Brightness Toggle</string>
+    <string name="permission_needed">Permission needed</string>
+    <string name="adaptive_on">Adaptive</string>
+    <string name="manual_on">Manual</string>
+    <string name="permission_msg">You need to grant permissions to Brightness Toggle to write your settings in order to work correctly</string>
+    <string name="grant_permission">Grant permission</string>
+    <string name="permission_available">Permissions settings available, quick tile available to be used.</string>
+    <string name="show_in_launcher">Show in app list</string>
+
+</resources>

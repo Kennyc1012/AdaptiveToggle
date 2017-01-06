@@ -1,0 +1,14 @@
+/build
+.idea
+.gradle
+.DS_Store
+bin/
+gen/
+gradle.properties
+openimgur.keystore
+crashlytics.properties
+/src/main/assets/crashlytics-build.properties
+/src/main/res/values/com_crashlytics_export_strings.xml
+local.properties
+*.iml
+Thumbs.db
