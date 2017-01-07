@@ -44,13 +44,13 @@ public class BrightnessService extends TileService {
         Context context = getApplicationContext();
         Tile tile = getQsTile();
 
-        if (Settings.System.canWrite(getApplicationContext())) {
+        if (Settings.System.canWrite(context)) {
             try {
                 boolean isAdaptive = Settings.System.getInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS_MODE) == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC;
                 int icon = isAdaptive ? R.drawable.ic_brightness_auto_white_24dp : R.drawable.ic_brightness_6_white_24dp;
                 String label = context.getString(isAdaptive ? R.string.adaptive_on : R.string.manual_on);
                 tile.setLabel(label);
-                tile.setIcon(Icon.createWithResource(getApplicationContext(), icon));
+                tile.setIcon(Icon.createWithResource(context, icon));
             } catch (Settings.SettingNotFoundException ex) {
                 // TODO?
             }
